@@ -12,18 +12,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
    <!-- Convert this to an external style sheet -->
-   <style>
-       main>.container {
-           padding: 60px 15px 0;
-       }
-   </style>
+   <link href="css/site.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="backGroundGradient">
 
 <main class="flex-shrink-0">
-   <div class="container">
-       <div class="row text-center">
+   <div class="container backGround">
+       <div class="row text-center text-light">
            <div class="col">
                <div>
                     <h1>Contact Me</h1>
@@ -48,7 +44,10 @@
                   </div>
             </div>
             <div class="col">
-                Phone (optional)
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone (optional)</label>
+                    <input type="phone-square" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
+                </div>
             </div>
         </div>
         <div class="row bg-light">
@@ -68,6 +67,7 @@
         <div class="row bg-light">
             <div class="col">
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <p></p>
             </div>
         </div>
    </div>
